@@ -1,0 +1,5 @@
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+add_executable(f2c_exe main.c init.c gram.c lex.c proc.c equiv.c data.c format.c expr.c exec.c intr.c io.c misc.c error.c mem.c names.c output.c p1output.c pread.c put.c putpcc.c vax.c formatdata.c parse_args.c niceprintf.c cds.c sysdep.c version.c)
+target_link_libraries(f2c_exe f2c)
+set_target_properties(f2c_exe PROPERTIES OUTPUT_NAME f2c)
+install(TARGETS f2c_exe ${F2C_INSTALL_DIR})
