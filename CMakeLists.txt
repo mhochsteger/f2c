@@ -11,6 +11,10 @@ check_function_exists( mkdtemp HAVE_MKDTEMP )
 check_function_exists( onexit HAVE_ONEXIT )
 check_function_exists( tmpfile HAVE_TMPFILE )
 
+if(NOT UNIX)
+  set(NON_UNIX_STDIO 1)
+endif()
+
 set(PACKAGE "f2c")
 set(PACKAGE_BUGREPORT "jjgarcia@users.sourceforge.net")
 set(PACKAGE_NAME "F2C Fortran to C99 compiler")

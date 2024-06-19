@@ -8,6 +8,7 @@
 #cmakedefine HAVE_MKDTEMP @HAVE_MKDTEMP@
 #cmakedefine HAVE_ONEXIT @HAVE_ONEXIT@
 #cmakedefine HAVE_TMPFILE @HAVE_TMPFILE@
+#cmakedefine NON_UNIX_STDIO @NON_UNIX_STDIO@
 
 #define PACKAGE            "@PACKAGE@"
 #define PACKAGE_BUGREPORT  "@PACKAGE_BUGREPORT@"
