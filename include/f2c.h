@@ -274,7 +274,7 @@ integer s_rnge(char *varn, ftnint offset, char *procn, ftnint line);
 int s_stop(char *s, ftnlen n);
 
 ftnint signal_(integer *sigp, void *proc);
-integer system_(register char *s, ftnlen n);
+integer system_(char *s, ftnlen n);
 
 void z_div(doublecomplex*, doublecomplex*, doublecomplex*);
 void z_cos(doublecomplex *r, doublecomplex *z);
